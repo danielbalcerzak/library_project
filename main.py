@@ -9,9 +9,9 @@ def main():
     library.add_new_book("Vonnegut", "Nr 5")
     library.rent_a_book("Vonnegut", "Nr 5", "Joe", "Snow")
     library.show_user_info("Joe", "Snow")
-    library.show_book_info("Nr5")
+    library.show_book_info("Nr 5")
 
-    #
+    # Start menu function
     func.menu(library)
 
 

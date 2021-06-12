@@ -29,7 +29,7 @@ class Library:
                 available.append(i)
         return available
 
-    def if_available(self, title) -> bool:
+    def if_available(self, title: str) -> bool:
         for book in self.books:
             if book.title == title:
                 return book.is_rent()
@@ -41,7 +41,7 @@ class Library:
                 rents.append(i)
         return rents
 
-    def show_book_info(self, title):
+    def show_book_info(self, title: str):
         for book in self.books:
             if book.title == title:
                 print(f"Author: {book.author}")
@@ -74,7 +74,7 @@ class Library:
             users.append(f"{user.name} {user.surname}")
         return users
 
-    def show_user_info(self, name, surname):
+    def show_user_info(self, name: str, surname: str):
         for user in self.users:
             if user.name == name and user.surname == surname:
                 user.show_info()
@@ -83,7 +83,7 @@ class Library:
 
     "METHODS TO RENT AND RETURN BOOK"
 
-    def rent_a_book(self, author: str, title: str, userName, userSurname):
+    def rent_a_book(self, author: str, title: str, userName: str, userSurname: str):
         for book in self.books:
             if book.author == author and book.title == title:
                 if book in self.return_available_books():

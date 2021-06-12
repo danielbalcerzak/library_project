@@ -1,6 +1,6 @@
 class User:
 
-    def __init__(self, name, surname):
+    def __init__(self, name: str, surname: str):
         self.name = name
         self.surname = surname
         self.books = []

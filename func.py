@@ -1,4 +1,4 @@
-def menu(library):
+def menu(library: object):
     while True:
         print("___________MENU___________")
         print("1. USERS")
@@ -34,7 +34,7 @@ def menu(library):
             actions(action, library)
 
 
-def user_actions(action, library):
+def user_actions(action: int, library):
     if action == 1:
         name = input("Enter name of a new user: ")
         surname = input("Enter surname of a new user: ")
@@ -56,7 +56,7 @@ def user_actions(action, library):
         menu(library)
 
 
-def book_actions(action, library):
+def book_actions(action: int, library):
     if action == 1:
         author = input("Enter the author of a new book: ")
         title = input("Enter title of a new book: ")
@@ -75,7 +75,7 @@ def book_actions(action, library):
         menu(library)
 
 
-def actions(action, library):
+def actions(action: int, library):
     if action == 1:
         user_name = input("Enter name of a user: ")
         surname_user = input("Enter surname of a user: ")
